@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Be Mine</title>
+  <style>
+    p {
+      text-align: center;
+      font-size: 32px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      margin-top: 5%;
+      color: #002988;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 25%;
+    }
+    body {
+      background-image: url('https://img.freepik.com/premium-vector/vibrant-love-background_69619-34.jpg');
+    }
+    #botao1, #botao2 {
+      background: linear-gradient(135deg, #8E54E9, #4776E6, #8E54E9);
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      position: fixed;
+      top: 90%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+    }
+    #botao2 {
+      margin-left: 20px;
+      position: absolute;
+      left: 39%;
+        top: 90%;
+    }
+  </style>
+</head>
+<body>
+  <p>Will u be mine ?</p>
+  <img src="https://gifdb.com/images/high/pretty-please-dog-no-0tte3k1y5pbaf4p3.gif">
+  <button id="botao1">YES BABY!</button>
+  <button id="botao2">NO</button>
+  <script>
+    const button2 = document.getElementById('botao2');
+    let left = 40;
+    button2.addEventListener('mouseover', function() {
+      if (left == 40) {
+        left = 44;
+      } else {
+        left = 40;
+      }
+      this.style.left = left + '%';
+    });
+    document.getElementById('botao1').addEventListener('click', function() {
+      alert('YAYY THANK U :) LOVE U');
+    });
+  </script>
+</body>
+</html>
